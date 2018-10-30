@@ -17,6 +17,8 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 ## API Routes Examples
 
+* You can use the project generated POSTMAN Collection by importing educationApi.postman_collection.json into your POSTMAN Workspace.
+
 * POST Student (http://localhost:4000/api/v1/students/)
 @RequestBody
 ```
