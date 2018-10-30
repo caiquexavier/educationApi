@@ -11,6 +11,7 @@ defmodule EducationApiWeb.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
+    plug BasicAuth, use_config: {:educationApi, :educationApiAuth}
   end
 
   # scope "/", EducationApiWeb do

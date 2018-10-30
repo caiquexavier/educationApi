@@ -43,7 +43,8 @@ defmodule EducationApi.Mixfile do
       {:cowboy, "~> 1.0"},
       {:plug_cowboy, "~> 1.0"},
       {:poison, "~> 3.1"},
-      {:timex, "~> 3.1"}
+      {:timex, "~> 3.1"},
+      {:basic_auth, "~> 2.2.2"}
     ]
   end
 

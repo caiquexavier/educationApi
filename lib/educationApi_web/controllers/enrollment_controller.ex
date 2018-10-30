@@ -32,15 +32,18 @@ defmodule EducationApiWeb.EnrollmentController do
 
   def update(conn, %{"cpf" => cpf} = changes) do
     enrollment = getEnrollmentByCpf(cpf)
-    changeset = EducationApi.Enrollment.changeset(enrollment, changes)
+    if enrollment do
+      changeset = EducationApi.Enrollment.changeset(enrollment, changes)
 
-    case EducationApi.Repo.update(changeset) do
-      {:ok, enrollment} ->
-        json conn |> put_status(:ok), enrollment
-      {:error, _result} ->
-        json conn |> put_status(:bad_request), %{errors: ["unable to update enrollment, payment method accepts {CREDIT | BANKSLIP}"]}
+      case EducationApi.Repo.update(changeset) do
+        {:ok, enrollment} ->
+          json conn |> put_status(:ok), enrollment
+        {:error, _result} ->
+          json conn |> put_status(:bad_request), %{errors: ["unable to update enrollment, payment method accepts {CREDIT | BANKSLIP}"]}
+      end
+    else
+      json conn |> put_status(:not_found), %{errors: ["unable to find enrollment "]}
     end
-
   end
 
   defp getEnrollmentByCpf(cpf) do

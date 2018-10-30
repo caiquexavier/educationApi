@@ -1,4 +1,3 @@
-![alt text](https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/elixir.png)
 # EducationApi
 
 Dependencies
@@ -19,6 +18,11 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 ## API Routes Examples
 
 * You can use the project generated POSTMAN Collection by importing educationApi.postman_collection.json into your POSTMAN Workspace.
+
+* Api Routes Authentication
+
+username: "educationApi"
+password: "educationApiPwd"
 
 * POST Student (http://localhost:4000/api/v1/students/)
 @RequestBody
