@@ -1,4 +1,4 @@
-![alt text](https://pbs.twimg.com/profile_images/683949209050046464/-MWyJCb1_400x400.png)
+![alt text](https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/elixir.png)
 # EducationApi
 
 Dependencies
