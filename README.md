@@ -21,8 +21,10 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 * Api Routes Authentication
 
-username: "educationApi"
-password: "educationApiPwd"
+```
+username: "educationApi",
+password: "educationApiPwd",
+```
 
 * POST Student (http://localhost:4000/api/v1/students/)
 @RequestBody
