@@ -1,5 +1,11 @@
 # EducationApi
 
+Dependencies
+
+  * Elixir/Pheonix
+  * Runnning local PostgresSQL instance:
+  * docker run --name educationApi -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
